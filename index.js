@@ -2,11 +2,9 @@
 
 const Hapi = require('@hapi/hapi');
 const Path = require('path');
+const { sanitizePath } = require('./lib/utils');
+require('dotenv').config();
 const adbClient = require('./lib/handlers/adb-client');
-const {sanitizePath} = require('./lib/utils');
-const dotenv = require('dotenv');
-
-dotenv.config(Path.resolve(process.cwd(), '.env.local'));
 
 const init = async () => {
   const server = Hapi.server({
