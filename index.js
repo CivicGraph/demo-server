@@ -7,8 +7,13 @@ require('dotenv').config();
 const adbClient = require('./lib/handlers/adb-client');
 
 const init = async () => {
+  let port = process.env.PORT;
+  if (port === null || port === "") {
+    port = 8000;
+  }
+
   const server = Hapi.server({
-    port: 8000,
+    port,
     host: 'localhost',
     routes: {
       files: {
