@@ -1,10 +1,11 @@
 'use strict';
 
+require('./lib/polyfills');
 const Hapi = require('@hapi/hapi');
 const Path = require('path');
 const { sanitizePath } = require('./lib/utils');
 require('dotenv').config();
-const adbClient = require('./lib/handlers/adb-client');
+const adbClient = require('./lib/adb-client');
 
 const init = async () => {
   let port = process.env.PORT;
