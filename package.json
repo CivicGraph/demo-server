@@ -12,7 +12,7 @@
   "author": "Aditya Mukhopadhyay",
   "license": "MIT",
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^19.1.1",
     "@hapi/hoek": "^8.2.5",
     "arangojs": "^6.11.1",
     "dotenv": "^8.1.0",
