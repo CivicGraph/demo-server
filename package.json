@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@hapi/hapi": "^19.1.1",
-    "@hapi/hoek": "^8.2.5",
+    "@hapi/hoek": "^9.0.4",
     "arangojs": "^6.11.1",
     "dotenv": "^8.1.0",
     "inert": "^5.1.3",
